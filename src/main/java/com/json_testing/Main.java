@@ -57,6 +57,6 @@ public class Main {
         Duration percentile = TicketUtils.getPercentileDuration(ticketList, percentile90);
 
         System.out.println(percentile90 + "th percentile is: " + percentile.toHours() +
-                " hours and " + averageFlyTime.toMinutesPart() + " minutes.");
+                " hours and " + percentile.toMinutesPart() + " minutes.");
     }
 }
